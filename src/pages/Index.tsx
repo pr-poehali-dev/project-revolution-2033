@@ -6,38 +6,38 @@ export default function Index() {
       <header className="header">
         <div className="logo">RETRO*DINER</div>
         <nav>
-          <a href="#">Меню</a>
-          <a href="#">Атмосфера</a>
+          <a href="#">Рецепты</a>
+          <a href="#">История</a>
           <a href="#">Галерея</a>
-          <a href="#">Контакты</a>
+          <a href="#">О проекте</a>
         </nav>
-        <button className="btn-cta">Забронировать стол</button>
+        <button className="btn-cta">Все рецепты</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              ЕДА КАК
-              <br />В <span>70-х</span>
+              РЕЦЕПТЫ
+              <br />ИЗ <span>70-х</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Американский дайнер в самом сердце города. Хрустящий бекон, сочные бургеры и молочные коктейли — всё как в старом кино.
+              Собрали лучшие рецепты классических американских дайнеров. Готовь дома — точь-в-точь как в старом кино.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Смотреть меню
+                Смотреть рецепты
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Наша история
+                История дайнеров
               </button>
             </div>
           </div>
           <div className="hero-img">
             <div className="sticker">
-              ОТКРЫТО
+              КУЛЬТУРА
               <br />
-              С 1974
+              КУХНИ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
               #РЕТРОВАЙБ
@@ -50,97 +50,66 @@ export default function Index() {
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * КЛАССИЧЕСКИЕ БУРГЕРЫ * МОЛОЧНЫЕ КОКТЕЙЛИ * РЕТРО АТМОСФЕРА * ОТКРЫТЫ ДО 02:00 * АМЕРИКАНСКАЯ КУХНЯ *
-            КЛАССИЧЕСКИЕ БУРГЕРЫ * МОЛОЧНЫЕ КОКТЕЙЛИ * РЕТРО АТМОСФЕРА * ОТКРЫТЫ ДО 02:00 * АМЕРИКАНСКАЯ КУХНЯ
+            &nbsp; * КЛАССИЧЕСКИЕ БУРГЕРЫ * МОЛОЧНЫЕ КОКТЕЙЛИ * РЕТРО РЕЦЕПТЫ * АМЕРИКАНСКАЯ КУХНЯ * ИСТОРИЯ ДАЙНЕРОВ *
+            КЛАССИЧЕСКИЕ БУРГЕРЫ * МОЛОЧНЫЕ КОКТЕЙЛИ * РЕТРО РЕЦЕПТЫ * АМЕРИКАНСКАЯ КУХНЯ * ИСТОРИЯ ДАЙНЕРОВ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ХИТ СЕЗОНА</h2>
+            <h2 className="section-title">РЕЦЕПТЫ</h2>
             <a
               href="#"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Все рецепты
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Основное</span>
               <img
                 src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 alt="Классический бургер"
               />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Big Retro</h3>
-                  <span className="price">590 ₽</span>
-                </div>
+                <h3 style={{ marginBottom: "10px" }}>Классический Smash Burger</h3>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Двойная говяжья котлета, чеддер, хрустящий бекон, соус «Ретро» и маринованные огурчики.
+                  Говяжий фарш 80/20, прижать на раскалённой сковороде, чеддер, маринованные огурцы, фирменный соус на бриоши. Готовится за 10 минут.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Новинка
+                Закуска
               </span>
               <img
                 src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 alt="Пицца по-американски"
               />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Americana Pizza</h3>
-                  <span className="price">720 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Пепперони, jalapeño, томатный соус и сыр моцарелла на тонком тесте.</p>
+                <h3 style={{ marginBottom: "10px" }}>Americana Pizza</h3>
+                <p style={{ fontSize: "14px", color: "#666" }}>
+                  Тонкое тесто на закваске, томатный соус, пепперони, jalapeño и двойной слой моцареллы. Рецепт из Чикаго 1972 года.
+                </p>
               </div>
             </div>
 
-            {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Классика
+                Напиток
               </span>
               <img
                 src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                 alt="Молочный коктейль"
               />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Milkshake Classic</h3>
-                  <span className="price">320 ₽</span>
-                </div>
+                <h3 style={{ marginBottom: "10px" }}>Vanilla Milkshake</h3>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Ванильное мороженое, цельное молоко, взбитые сливки. Прямо как у бабушки в Техасе.
+                  Ванильное мороженое, цельное молоко, щепотка соли и взбитые сливки. Классика, которую невозможно испортить.
                 </p>
               </div>
             </div>
@@ -149,12 +118,12 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">АТМОСФЕРА 70-х — ЖИВАЯ.</h2>
+            <h2 className="vibe-title">ЧТО ТАКОЕ ДАЙНЕР?</h2>
             <p className="vibe-text">
-              Кожаные диваны, неоновые вывески и рок-н-ролл из старого джукбокса. Каждый уголок дайнера создан так, будто время остановилось в 1974 году. Приходи один или с компанией — место найдётся для всех.
+              Американский дайнер — это не просто кафе. Это культура. В 1950–70-х они стали символом свободы, молодёжи и рок-н-ролла. Хромированные стойки, красные диваны, джукбоксы — и еда, которая кормила целые поколения.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Узнать больше
+              Читать историю
             </button>
           </div>
           <div className="vibe-img"></div>
@@ -162,7 +131,7 @@ export default function Index() {
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @RETRO.DINER
+            ГАЛЕРЕЯ
           </h2>
           <div className="social-grid">
             <div className="social-item">
@@ -197,20 +166,20 @@ export default function Index() {
         <div>
           <div className="footer-logo">RETRO*DINER</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Настоящий американский дайнер с атмосферой 70-х. Открылись в 1974 — и с тех пор не меняем рецепты.
+            Информационный проект о культуре американских дайнеров и классических рецептах эпохи 70-х.
           </p>
         </div>
         <div className="footer-links">
-          <h4>Навигация</h4>
+          <h4>Разделы</h4>
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+                Рецепты
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нас
+                История
               </a>
             </li>
             <li>
@@ -226,18 +195,18 @@ export default function Index() {
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>О проекте</h4>
           <ul>
-            <li>Вт–Чт: 12:00 – 23:00</li>
-            <li>Пт–Сб: 12:00 – 02:00</li>
-            <li>Вс: 11:00 – 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Учебный сайт</li>
+            <li>Культура дайнеров</li>
+            <li>Рецепты 1950–1970-х</li>
+            <li>Сделано с любовью</li>
           </ul>
         </div>
         <div className="footer-bottom">
           <span>© 2024 RETRO DINER</span>
           <span>ВКУС КЛАССИКИ</span>
-          <span>IG / VK / TG</span>
+          <span>Учебный проект</span>
         </div>
       </footer>
     </>
